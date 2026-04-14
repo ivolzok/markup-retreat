@@ -1,1 +1,21 @@
-/* Пиши стили тут */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: 200px;
+}
+.rating input {
+    display: none;
+}
+.rating label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.rating label::before {
+    content: "★";
+}
+.rating input:checked ~ label {
+    color: gold;
+}
