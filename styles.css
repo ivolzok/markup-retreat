@@ -19,3 +19,10 @@
 .rating input:checked ~ label {
     color: gold;
 }
+
+.rating label:hover{
+    color: gold;
+}
+.rating label:hover ~ label{
+    color: gold;
+}
